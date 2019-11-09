@@ -15,4 +15,5 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        return self.title
+        # return self.title
+        return f'title:{self.title} - author:{self.author} - c:{self.created_date} - p:{self.published_date}'
